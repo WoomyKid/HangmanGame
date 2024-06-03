@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game Custom</title>
+    <link rel="stylesheet" href="custom.css">
+    <script src="scripts/custom.js" defer></script>
+</head>
+<body>
+    <div class="custom">
+        <div class="content">
+        <h4>Enter your prompt:</h4>
+        <p>Don't use capital letters when typing</p>
+        <input type="password" id="input">
+        <button class="start">Start Game</button>
+    </div>
+    </div>
+    <div class="game-modal">
+        <div class="content">
+            <img src="images/lost.gif" alt="gif-lost">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="images/hangman1.png" alt="hangman-img">
+            <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="guesses">
+                Incorrect guesses:
+                <b>0 / 10</b>
+            </h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+    <nav>
+        <label for="gamemode">GAMEMODE:</label>
+        <select name="GAMEMODE" id="gamemode">
+            <option value="SOLO">SOLO</option>
+            <option value="CUSTOM">CUSTOM</option>
+        </select>
+    </nav>
+</body>
+</html>
